@@ -1,0 +1,52 @@
+.LandingPage__faq-wrapper___1e15J {
+    color: #333;
+    font-family: "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    padding: 0 20em;
+    background-color: #fff;
+    font-size: 4px;
+}
+
+.LandingPage__div-heading___ERC4_ {
+    font-family: "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    display: inline-block;
+    color: #9e9e9e;
+    margin: 70px 10px;
+    font-size: 20px;
+}
+
+.LandingPage__questions-wrapper___30wzp {
+    color: #333;
+    font-family: "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-size: 4px;
+    padding-bottom: 5em;
+}
+
+.FAQ__wrapper___5yZTI {
+    color: #333;
+    font-family: "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    width: 100%;
+    font-size: 12px;
+}
+
+.FAQ__question-div___1-Gaq {
+    font-family: "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 0;
+    align-items: flex-start;
+    font-size: 18px;
+    text-align: left;
+    color: #2e2d2d;
+}
+
+.FAQ__answer-div___7ZjVH {
+    font-family: "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 10px 0 20px;
+    font-size: 16px;
+    text-align: left;
+    color: #9e9e9e;
+}
