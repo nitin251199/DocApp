@@ -8,7 +8,7 @@ import { SocketContext } from '../../../contexts/Context';
 
 
 
-// const socket = io.connect("http://localhost:3001");
+// const socket = io.connect("http://localhost:1000");
 
 
 function Main(props) {

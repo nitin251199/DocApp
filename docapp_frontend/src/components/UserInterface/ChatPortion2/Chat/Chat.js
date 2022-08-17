@@ -8,7 +8,7 @@ import closeIcon from "../../images/closeIcon.png";
 
 let socket;
 
-const ENDPOINT = "http://localhost:3001";
+const ENDPOINT = "http://localhost:1000";
 
 const Chat = ({username,room},props) => {
     const [id, setid] = useState("");

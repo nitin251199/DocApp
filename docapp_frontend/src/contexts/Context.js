@@ -10,7 +10,7 @@ const SocketContext = createContext();
 const ContextProvider = ({ children }) => {
   
   
-  const socket = io('http://localhost:3001');
+  const socket = io('http://localhost:1000');
   const [callAccepted, setCallAccepted] = useState(false);
   const [callEnded, setCallEnded] = useState(false);
   const [stream, setStream] = useState();

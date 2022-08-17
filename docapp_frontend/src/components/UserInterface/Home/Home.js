@@ -116,7 +116,7 @@ export default function Home(props) {
                 padding: 60,
                 fontWeight: 800,
                 fontFamily: 'Lato'
-            }}>Our Prestigious Doctors</div>
+            }}>Our Doctors</div>
             <div>
                 <Container className="carousel" style={{maxWidth:'100%',overflowX:'hidden'}}>
                     <Slider {...cardSettings}>

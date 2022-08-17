@@ -29,7 +29,17 @@ export const AppointmentPage = (props) => {
 
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
-  const [date, setDate] = useState("");
+  const [date, setDate] = useState(
+    new Date().getFullYear() +
+      "-" +
+      (new Date().getMonth() + 1 > 9
+        ? new Date().getMonth() + 1
+        : "0" + (new Date().getMonth() + 1)) +
+      "-" +
+      (new Date().getDate() > 9
+        ? new Date().getDate()
+        : "0" + new Date().getDate())
+  );
   const [department, setDepartment] = useState("");
   const [departmentList, setDepartmentList] = useState([]);
   const [doctorList, setDoctorList] = useState([]);
@@ -38,6 +48,8 @@ export const AppointmentPage = (props) => {
   const [message, setMessage] = useState("");
   const [time, setTime] = useState("");
   const [amount, setAmount] = useState("");
+
+  var u = JSON.parse(sessionStorage.getItem("userdetails"));
 
   const fetchAllDepartments = async () => {
     var list = await getData("doctor/fetchalldepartments");
@@ -91,14 +103,15 @@ export const AppointmentPage = (props) => {
     handler: async function (response) {
       if (response) {
         var body = {
+          userid: u.userid,
           patientname: firstName + " " + lastName,
-          date: date,
-          department: department,
-          doctor: doctor,
-          phoneno: phoneno,
-          message: message,
-          time: time,
-          amount: amount,
+          date,
+          department,
+          doctor,
+          phoneno,
+          message,
+          time,
+          amount,
         };
         var result = await postData("appointment/insertappointments", body);
         if (result) {
@@ -111,8 +124,8 @@ export const AppointmentPage = (props) => {
             imageAlt: "Custom image",
           }).then((result) => {
             /* Read more about isConfirmed, isDenied below */
-           props.history.push("/userprofile2")
-          })
+            props.history.push("/userprofile2");
+          });
         } else {
           Swal.fire({
             title: "E-Consult.com",
@@ -259,7 +272,7 @@ export const AppointmentPage = (props) => {
                   labelId="time"
                   id="demo-simple-select"
                   value={time}
-                  onChange={(e)=>setTime(e.target.value)}
+                  onChange={(e) => setTime(e.target.value)}
                 >
                   <MenuItem value={"8:00 am"}>8:00 am</MenuItem>
                   <MenuItem value={"9:00 am"}>9:00 am</MenuItem>

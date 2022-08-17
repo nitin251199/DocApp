@@ -59,7 +59,8 @@ export default function Appointments(props) {
   const [appointment, setAppointment] = useState([]);
 
   const fetchAppointmentsbyUser = async () => {
-    var body = { phoneno: u.mobileno };
+    console.log(">>",u)
+    var body = { phoneno: u.mobileno, userid: u.userid };
     var result = await postData("appointment/fetchappointmentsbyuser", body);
     setAppointment(result.data);
   };

@@ -49,19 +49,19 @@ export default function Login(props) {
       if (result.result) {
         setShowOtp(true)
         var otpval = parseInt(8999 * Math.random() + 1000)
-        // alert(otpval)
+        alert(otpval)
         console.log('OTP',otpval);
         setGotp(otpval)
         setDetails(result.data[0])
         
-        result=await postData("userdetails/smsapi",{otp:otpval,mobileno:mobileno})
+        // result=await postData("userdetails/smsapi",{otp:otpval,mobileno:mobileno})
 
       }
       else {
         var otpval = parseInt(8999 * Math.random() + 1000)
-        // alert(otpval)
+        alert(otpval)
         console.log('OTP',otpval);
-        result=await postData("userdetails/smsapi",{otp:otpval,mobileno:mobileno})
+        // result=await postData("userdetails/smsapi",{otp:otpval,mobileno:mobileno})
         props.history.push({ pathname: '/signup' }, { mobileno: mobileno, otp: otpval })
       }
     }
@@ -71,18 +71,18 @@ export default function Login(props) {
       if (docResult.result) {
         setShowOtp(true)
         var otpval = parseInt(8999 * Math.random() + 1000)
-        // alert(otpval)
+        alert(otpval)
         console.log('OTP',otpval);
         setGotp(otpval)
         setDetails(docResult.data[0])
-       result = await postData('userdetails/smsapi',{otp:otpval,mobileno:mobileno})
+      //  result = await postData('userdetails/smsapi',{otp:otpval,mobileno:mobileno})
 
       }
       else {
         var otpval = parseInt(8999 * Math.random() + 1000)
-        // alert(otpval)
+        alert(otpval)
         console.log('OTP',otpval);
-        result=await postData("userdetails/smsapi",{otp:otpval,mobileno:mobileno})
+        // result=await postData("userdetails/smsapi",{otp:otpval,mobileno:mobileno})
         props.history.push({ pathname: '/adddoctors' }, { phoneno: mobileno, otp: otpval })
       }
     }
