@@ -161,7 +161,7 @@ export default function Home(props) {
           fontFamily: "Lato",
         }}
       >
-        Our Doctors
+        Our Prestigious Doctors
       </div>
       <div>
         <Container
