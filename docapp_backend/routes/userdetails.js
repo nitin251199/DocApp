@@ -69,20 +69,20 @@ router.get("/getallusers", function (req, res) {
   });
 });
 
-router.post("/smsapi", function (req,res,next) {
-  const accountSid = "ACdbe07e946a1049e84b41ea754ab14b4f";
-  const authToken = "e0c7226a65f8f9dc5ec40cf8717832fb";
-  const client = require("twilio")(accountSid, authToken);
+// router.post("/smsapi", function (req,res,next) {
+//   const accountSid = "ACdbe07e946a1049e84b41ea754ab14b4f";
+//   const authToken = "e0c7226a65f8f9dc5ec40cf8717832fb";
+//   const client = require("twilio")(accountSid, authToken);
 
-  client.messages
-    .create({
-      body: `Your OTP for login is ${req.body.otp}`,
-      messagingServiceSid: "MG48a34c7d8bded1759c31490ea4489c13",
-      to: `+91${req.body.mobileno}`,
-    })
-    .then((message) => res.status(200).json({id : message.sid}))
-    .done();
-});
+//   client.messages
+//     .create({
+//       body: `Your OTP for login is ${req.body.otp}`,
+//       messagingServiceSid: "MG48a34c7d8bded1759c31490ea4489c13",
+//       to: `+91${req.body.mobileno}`,
+//     })
+//     .then((message) => res.status(200).json({id : message.sid}))
+//     .done();
+// });
 
 router.post("/fetchalladdresses", function (req, res) {
   pool.query(
