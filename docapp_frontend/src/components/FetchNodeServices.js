@@ -1,4 +1,4 @@
-export const ServerURL = "http://e-doc-app.herokuapp.com";
+export const ServerURL = "https://e-doc-app.herokuapp.com";
 // export const ServerURL = "http://localhost:1000";
 var axios = require("axios");
 const getData = async (URL) => {
