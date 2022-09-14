@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8ac0de83.chunk.css",
+    "main.js": "/static/js/main.23b59d5f.chunk.js",
+    "main.js.map": "/static/js/main.23b59d5f.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.9803dfb9.js",
+    "runtime-main.js.map": "/static/js/runtime-main.9803dfb9.js.map",
+    "static/css/2.25940062.chunk.css": "/static/css/2.25940062.chunk.css",
+    "static/js/2.0eb36ac6.chunk.js": "/static/js/2.0eb36ac6.chunk.js",
+    "static/js/2.0eb36ac6.chunk.js.map": "/static/js/2.0eb36ac6.chunk.js.map",
+    "static/js/3.8bc976fb.chunk.js": "/static/js/3.8bc976fb.chunk.js",
+    "static/js/3.8bc976fb.chunk.js.map": "/static/js/3.8bc976fb.chunk.js.map",
+    "static/js/4.79d660de.chunk.js": "/static/js/4.79d660de.chunk.js",
+    "static/js/4.79d660de.chunk.js.map": "/static/js/4.79d660de.chunk.js.map",
+    "static/js/5.b53c6c94.chunk.js": "/static/js/5.b53c6c94.chunk.js",
+    "static/js/5.b53c6c94.chunk.js.map": "/static/js/5.b53c6c94.chunk.js.map",
+    "static/js/6.af1d0916.chunk.js": "/static/js/6.af1d0916.chunk.js",
+    "static/js/6.af1d0916.chunk.js.map": "/static/js/6.af1d0916.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.25940062.chunk.css.map": "/static/css/2.25940062.chunk.css.map",
+    "static/css/main.8ac0de83.chunk.css.map": "/static/css/main.8ac0de83.chunk.css.map",
+    "static/js/2.0eb36ac6.chunk.js.LICENSE.txt": "/static/js/2.0eb36ac6.chunk.js.LICENSE.txt",
+    "static/js/3.8bc976fb.chunk.js.LICENSE.txt": "/static/js/3.8bc976fb.chunk.js.LICENSE.txt",
+    "static/js/4.79d660de.chunk.js.LICENSE.txt": "/static/js/4.79d660de.chunk.js.LICENSE.txt",
+    "static/js/5.b53c6c94.chunk.js.LICENSE.txt": "/static/js/5.b53c6c94.chunk.js.LICENSE.txt",
+    "static/media/appointment-clip.6e4854fd.jpg": "/static/media/appointment-clip.6e4854fd.jpg",
+    "static/media/bp-clip.e74c1af8.png": "/static/media/bp-clip.e74c1af8.png",
+    "static/media/glucose-clip.0e076f7f.png": "/static/media/glucose-clip.0e076f7f.png",
+    "static/media/pat-today-clip.33faa45c.jpg": "/static/media/pat-today-clip.33faa45c.jpg",
+    "static/media/rating-icon.490c8d79.png": "/static/media/rating-icon.490c8d79.png",
+    "static/media/slick-theme.css": "/static/media/slick.c94f7671.ttf",
+    "static/media/weight-icon.9aae0862.png": "/static/media/weight-icon.9aae0862.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9803dfb9.js",
+    "static/css/2.25940062.chunk.css",
+    "static/js/2.0eb36ac6.chunk.js",
+    "static/css/main.8ac0de83.chunk.css",
+    "static/js/main.23b59d5f.chunk.js"
+  ]
+}
